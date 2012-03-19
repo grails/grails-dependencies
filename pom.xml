@@ -5,11 +5,38 @@
     <groupId>org.grails</groupId>
     <artifactId>grails-dependencies</artifactId>
     <packaging>pom</packaging>
-    <version>2.0.2.BUILD-SNAPSHOT</version>
+    <version>2.0.1</version>
 
     <name>Grails dependencies</name>
     <description>POM file containing Grails dependencies.</description>
     <url>http://grails.org</url>
+    
+    <licenses>
+        <license>
+          <name>The Apache Software License, Version 2.0</name>
+          <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+          <distribution>repo</distribution>
+        </license>    
+    </licenses>
+    <scm>
+      <url>http://github.com/grails/grails-maven-archetype</url>
+      <developerConnection>scm:git:git://github.com/grails/grails-dependencies.git</developerConnection>
+      <connection>scm:git:git@github.com:grails/grails-dependencies.git</connection>
+    </scm>
+    <developers>
+      <developer>
+        <id>graemerocher</id>
+        <name>Graeme Rocher</name>
+        <email>graeme.rocher@gmail.com</email>
+      </developer>
+    </developers>
+
+    <parent>
+      <groupId>org.sonatype.oss</groupId>
+      <artifactId>oss-parent</artifactId>
+      <version>7</version>
+    </parent>
+    
 
 	<properties>
 		<groovy.version>1.8.6</groovy.version>
@@ -1134,25 +1161,4 @@
         </plugins>
     </build>    
 
-    <repositories>
-        <repository>
-            <id>grails</id>
-            <name>grails</name>
-            <url>http://repo.grails.org/grails/core</url>
-        </repository>
-    </repositories>
-    
-    <distributionManagement>        
-        <repository>
-          <id>artifactory</id>
-          <name>artifactory repo</name>
-          <url>http://repo.grails.org/grails/libs-releases-local</url>
-        </repository>
-        <snapshotRepository>
-          <uniqueVersion>true</uniqueVersion>
-          <id>artifactory</id>
-          <name>artifactory repo</name>
-          <url>http://repo.grails.org/grails/libs-snapshots-local</url>
-        </snapshotRepository>        
-    </distributionManagement>
 </project>
