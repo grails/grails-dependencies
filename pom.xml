@@ -5,7 +5,7 @@
     <groupId>org.grails</groupId>
     <artifactId>grails-dependencies</artifactId>
     <packaging>pom</packaging>
-    <version>2.3.0</version>
+    <version>2.3.1</version>
 
     <name>Grails dependencies</name>
     <description>POM file containing Grails dependencies.</description>
@@ -39,7 +39,7 @@
     
 
 	<properties>
-		<grails.version>2.3.0</grails.version>
+		<grails.version>2.3.1</grails.version>
 	</properties>
 
     <dependencies>
